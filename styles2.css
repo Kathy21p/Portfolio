@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://images.unsplash.com/photo-1487147264018-f937fba0c817?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+}
+
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#encabezado {
+    background-color: rgba(181, 55, 17, 0.807);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#encabezado nav {
+    display: flex;
+    gap: 1.5em;
+}
+
+#encabezado a i {
+    color: rgb(250, 249, 249);
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+#encabezado nav ul li {
+    color: rgb(177, 167, 161);
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.train {
+    color: rgb(177, 167, 161);
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    gap: 1.5em;
+    list-style: none;
+}
+
+footer {
+    color: white;
+    line-height: 2em;
+    background-image: url(https://img.freepik.com/premium-vector/1970-seamless-naive-pattern-with-daisy-with-smile-hippie-aesthetics-retro-lavender-background_651519-279.jpg);
+}
+
+.solo {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-stretch: narrower;
+    font-style: italic;
+    border: 2px solid
+}
+
+footer ul {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgb(51, 13, 13);
+}
+
+.item {
+    color: black;
+    text-decoration: underline;
+}
+
+
+.letter {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color:  rgba(181, 55, 17, 0.807);
+    font-variant: small-caps;
+    border: 3px solid;
+
+}
+
+div h2 {
+    color:  rgba(181, 55, 17, 0.807);
+    text-decoration:underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.acerca-imagen {
+    align-items: center;
+    text-align: unset;
+    border-radius: 2em;
+    border: 2px solid black;
+}
+
+main {
+    padding: 30px;
+}
+
+.section-1 {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+}
+
+.acerca-de {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    line-height: 2em;
+}
+
+.text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.valle {
+    border-radius: 2em;
+    border: 1cap solid rgba(70, 21, 21, 0.688);
+
+}
+
+.bloques {
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    margin-top: 5%;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.contenedor2 {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    flex-direction: row;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.girasol {
+    border-radius: 2em;
+    border: 1cap solid rgba(70, 21, 21, 0.688);
+}
+
+.contenedor a {
+    color: brown;
+    text-decoration: underline;
+
+}
+
+.contenedor2 a {
+    color: brown;
+    text-decoration: underline;
+}
+
+.contenedor h2 {
+    text-decoration: underline;
+}
+
+.contenedor2 h2 {
+    text-decoration: underline;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+footer #frase{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration:solid;
+    font-style: oblique;
+    text-align: center;
+    font-size: 17px;
+    border: 1px solid mediumslateblue;
+}
+#btn-generar{
+    color: rgb(0, 0, 0);
+    background-color: rgb(187, 135, 246);
+    font-size: 18px;
+}
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+
+    .section-1 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .acerca-de {
+        display: flex;
+        text-align: center;
+        line-height: 2em;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #encabezado{
+        background-color: rgb(224, 137, 74);
+    }
+    #encabezado ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+    #check:checked ~ ul{
+        left: 0%;
+        display: block;
+    }
+    #encabezado ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    #encabezado a{
+        font-size: 20px;
+    }
+}

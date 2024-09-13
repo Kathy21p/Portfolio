@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://images.unsplash.com/photo-1487147264018-f937fba0c817?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+}
+
+#encabezado {
+    background-color: rgba(181, 55, 17, 0.807);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#encabezado nav {
+    display: flex;
+    gap: 1.5em;
+}
+
+#encabezado a i {
+    color: rgb(250, 249, 249);
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+#encabezado nav ul li {
+    color: rgb(177, 167, 161);
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.train {
+    color: rgb(177, 167, 161);
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    gap: 1.5em;
+    list-style: none;
+}
+
+footer {
+    color: white;
+    line-height: 2em;
+    background-image: url(https://img.freepik.com/premium-vector/1970-seamless-naive-pattern-with-daisy-with-smile-hippie-aesthetics-retro-lavender-background_651519-279.jpg);
+}
+
+.solo {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-stretch: narrower;
+    font-style: italic;
+    border: 2px solid
+}
+
+footer ul {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgb(178, 109, 25);
+}
+
+.item {
+    color: black;
+    text-decoration: underline;
+}
+.titulo_seccion {
+    position: relative;
+    font-size: 40px;
+    color: #003750;
+    text-align: center;
+    }
+    .container {
+    max-width: 3em; /* Define el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 1.5em; /* Agrega un poco de espacio alrededor del formulario */
+    border: 3em; /* Agrega un borde al contenedor */
+    border-radius: XX; /* Agrega bordes redondeados al contenedor */
+    }
+    .form-group {
+    margin-bottom: 15px; /* Espacio entre cada input */
+    }
+    label {
+    margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+    width: 14em; /* Define el ancho máximo del input */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+    textarea {
+    resize: vertical; /* Permite redimensionar verticalmente el textarea */
+    }
+    button{
+    color: brown;
+    }
+    button:hover {
+    background-color: #0056b3;
+    }
+    
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .checkbtn {
+        display: block;
+    }
+
+    #encabezado {
+        background-color: rgb(224, 137, 74);
+    }
+
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+        display: block;
+    }
+
+    #encabezado ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    #encabezado a {
+        font-size: 20px;
+    }
+}
